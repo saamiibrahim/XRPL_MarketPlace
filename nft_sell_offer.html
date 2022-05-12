@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src='https://unpkg.com/xrpl@2.1.1'></script>
+    <script src='xrp-nft-transfer.js'></script>
+    <script>
+        if (typeof module !== "undefined") {
+          const xrpl = require('xrpl')
+        }
+    </script>
+</head>
+<body>
+    
+<center>
+    <br/>
+    <br/>
+    <span>Account Seed: </span>
+    <input id="account" size="70" value="ssR3ojp61kxiNcpTmgXuN1n37rvss">
+    <br/>
+    <br/>
+    <span>Amount (in drops): </span>
+    <input  id="amount" size="55" value="25000000">
+    <br/><br/>
+
+    <span>Token ID:  </span>
+    <input id="tokenid" size="75" value="00080000D084064ACDEABA141ECF8655EDCD7F4A9FE1B5DB0000099B00000000">
+    <br/><br/>
+    <button onClick="createSellOffer()">Create Sell Offer</button>
+    <!-- <button onClick="mintToken()">Create Buy Offer</button> -->
+    <!-- <button onClick="mintToken()">Accept Buy Offer</button> -->
+    <button onClick="getSellOffer()">Get Sell offers</button>
+    
+<br/>
+<br/>
+<br/>
+    <div >  
+        Balance:
+    <div id="balance"></div><br/>
+        <span id="result" ></span>
+        
+        <!-- <span  id="result"></span> -->
+    <br/>
+    <br/>
+    
+    </div>
+</center>
+
+
+<script>
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src='https://unpkg.com/xrpl@2.1.1'></script>
+    <script src='xrp-nft.js'></script>
+    <script>
+        if (typeof module !== "undefined") {
+          const xrpl = require('xrpl')
+        }
+    </script>
+</head>
+<body>
+    
+<center>
+    <br/>
+    <br/>
+    <span>Account Seed: </span>
+    <input id="account" size="70" value="ssR3ojp61kxiNcpTmgXuN1n37rvss">
+    <br/>
+    <br/>
+    <span>Token URL: </span>
+    <input id="token_url" size="100" value="https://gateway.pinata.cloud/ipfs/QmXkXcSKFwbwwZvzEMmjip81VeZ9ZyPqnjrjiDhf6kcvMy">
+    <br/><br/>
+    <button onClick="getNFT()">Get All NFTs</button>
+    <button onClick="mintToken()">Mint NFT</button>
+    
+<br/>
+<br/>
+<br/>
+    <div style="font-size:13px">  
+        Balance:
+    <div id="balance"></div><br/>
+        <span id="result" ></span>
+        
+        <!-- <span  id="result"></span> -->
+    <br/>
+    <br/>
+    
+    </div>
+</center>
+
+
+<script>
+
+
+</script>
+</body>
+</html>
